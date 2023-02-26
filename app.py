@@ -50,7 +50,6 @@ def index():
                     #rating.encode(encoding='utf-8')
                     rating = commentbox.div.div.div.div.text
 
-
                 except:
                     rating = 'No Rating'
                     logging.info("rating")
@@ -89,6 +88,5 @@ def index():
         return render_template('index.html')
 
 # This is my-commit..
-
 if __name__=="__main__":
     app.run(host="0.0.0.0")
